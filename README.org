@@ -1,0 +1,80 @@
+* neovim configuration
+
+  A minimal, native-first Neovim config using the built-in =vim.pack= plugin
+  manager and the =mini.nvim= suite.
+
+  Features:
+
+  - Native package manager (=vim.pack=)
+  - LSP (nvim-lspconfig)
+  - Treesitter (nvim-treesitter)
+  - Completion (blink.cmp) with Copilot (blink-copilot)
+  - Snippets (mini.snippets + friendly-snippets)
+  - Linting (nvim-lint) and formatting (conform.nvim)
+  - Git integration (gitsigns.nvim, mini.diff)
+  - File explorer (oil.nvim)
+  - Fuzzy finder / picker (mini.pick, mini.extra)
+  - Status line (mini.statusline)
+  - Editing helpers (mini.ai, mini.surround, mini.pairs)
+  - Debugging (nvim-dap)
+  - Rust tooling (rustaceanvim)
+  - Diagnostics list (trouble.nvim)
+  - TODO comments (todo-comments.nvim)
+  - Keybinding hints (which-key.nvim)
+  - Indent guides (indent-blankline.nvim)
+  - Autosave (auto-save.nvim)
+  - Image paste (img-clip.nvim)
+  - Org mode (orgmode, org-roam, org-bullets)
+  - Lua development (lazydev.nvim)
+  - Color scheme (kanagawa.nvim)
+
+* requirements
+
+  External tools are resolved on =$PATH=; install the ones you need.
+
+** LSP servers
+
+  - asm_lsp (=asm-lsp=)
+  - bashls (=bash-language-server=)
+  - clangd (=clangd=)
+  - copilot (=copilot-language-server=, run via =mise exec node@lts=)
+  - dockerls (=docker-langserver=)
+  - fish_lsp (=fish-lsp=)
+  - gopls (=gopls=)
+  - jinja_lsp (=jinja-lsp=)
+  - jsonls (=vscode-json-language-server=)
+  - ltex_plus (=ltex-ls-plus=)
+  - lua_ls (=lua-language-server=)
+  - marksman (=marksman=)
+  - nil_ls (=nil=)
+  - ruff (=ruff=)
+  - taplo (=taplo=)
+  - terraformls (=terraform-ls=)
+  - ts_ls (=typescript-language-server=)
+  - ty (=ty=)
+  - yamlls (=yaml-language-server=)
+  - zls (=zls=)
+  - rust-analyzer (via rustaceanvim)
+
+** Linters (nvim-lint)
+
+  - =hadolint=, =golangci-lint=, =rumdl=, =shellcheck=
+  - =bash=, =fish=, =nix=, =zsh= (native check modes)
+
+** Formatters (conform.nvim)
+
+  - =nasmfmt=, =shfmt=, =fish_indent=, =prettierd= / =prettier=, =kdlfmt=,
+    =stylua=, =rumdl=, =alejandra=, =ruff=, =rustfmt=, =terraform=, =taplo=,
+    =yamlfmt=
+
+** Debugging (nvim-dap)
+
+  - =probe-rs= (Rust embedded DAP)
+
+** Other runtime dependencies
+
+  - =mise= + Node LTS (Copilot language server)
+  - =git= (vim.pack, gitsigns)
+  - C compiler (=gcc= / =clang=) + =tree-sitter= CLI (treesitter parser builds)
+  - =xclip= / =wl-clipboard= (img-clip image paste)
+  - A Nerd Font (diagnostic and status icons)

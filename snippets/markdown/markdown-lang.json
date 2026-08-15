@@ -1,0 +1,9 @@
+{
+  "rumdl disable": {
+    "prefix": "<MD",
+    "body": [
+      "<!-- rumdl-disable -->",
+      "$0"
+    ]
+  }
+}

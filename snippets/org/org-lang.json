@@ -1,0 +1,9 @@
+{
+  "ltex language": {
+    "prefix": "<L",
+    "body": [
+      "# LTeX: language=es-AR,en-US",
+      "$0"
+    ]
+  }
+}
